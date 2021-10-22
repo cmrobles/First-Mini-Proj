@@ -75,6 +75,7 @@ complete <- function(directory, id = 1:332){
   # creating column names for the index and number of observations
   colnames(comp_cases) <- c("id", "nobs")
  
+  # return the data frame with the number of observations and column names
    return(comp_cases)
 }
 
@@ -210,3 +211,7 @@ hist(outcome[, 11],
   main = "Hospital 30-Day Death (Mortality) Rates from Heart Attack", # title of the histogram
   xlab = "Deaths", # label for the x axis
   col = "light blue") # color of the histogram
+
+
+
+
